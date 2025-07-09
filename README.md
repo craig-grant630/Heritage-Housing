@@ -42,7 +42,20 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ## Hypothesis and how to validate?
 
-* List here your project hypothesis(es) and how you envision validating it (them).
+**Hypotheses 1**
+We consider the price of houses to be higher if the house has had a larger surface measured sq. ft.
+
+* A correlation study can help in investigating if this is true.
+
+**Hypotheses 2**
+We consider the price oh houses to be higher if the house was built more recently.
+
+* A correlation study can help in investigating if this is true.
+
+**Hypotheses 3**
+We consider the house price to be higher if the house is in good condition.
+
+* A correlation study can help in investigating if this is true.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
