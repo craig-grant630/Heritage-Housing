@@ -1,4 +1,16 @@
 
+# Overview
+
+Lydia Doe, a Belgian resident, recently inherited four properties located in Ames, Iowa, USA. Although she is knowledgeable about real estate markets in her home country, she recognizes that property valuation principles may differ significantly in the American Midwest. To avoid inaccurate estimations and ensure profitable sales, Lydia seeks a data-driven approach to determine the market value of her new assets.
+
+This project is developed to support Lydia in:
+
+Accurately estimating the sales price of the four inherited homes.
+
+Gaining insights into which house attributes most strongly affect pricing in Ames.
+
+Building a flexible and user-friendly web application capable of predicting house prices based on input features for any property in Ames, Iowa.
+
 ## Dataset Content
 
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
@@ -111,6 +123,4 @@ We consider the house price to be higher if the house is in good condition.
 
 ## Acknowledgements (optional)
 
-
 * In case you would like to thank the people that provided support through this project.
-
