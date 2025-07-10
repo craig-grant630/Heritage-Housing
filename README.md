@@ -79,8 +79,35 @@ We consider the house price to be higher if the house is in good condition.
 
 ## Dashboard Design
 
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
+### Page 1: Project Overview
+  
+* Project Introduction
+  
+This project involves analyzing a dataset containing property sale information from Ames, Iowa. The goal is to understand the factors that influence house prices and develop a tool to predict the sale price of individual homes based on their attributes.
+
+* Business Objectives
+
+The client wishes to:
+
+* Identify which house features are most strongly related to the final sale price.
+
+* Use that insight to forecast the market value of four inherited properties, as well as any future houses in Ames.
+
+### Page 2: Project Hypothesis & Validation
+
+* Hypothesis
+
+Certain property features — such as living area, overall quality, and basement finish — have a strong influence on house sale prices in Ames, Iowa. If these attributes are accurately captured, a predictive model should be able to estimate house prices with reasonable accuracy.
+
+* Validation Approach
+
+To test this, I:
+
+* Explored correlations and predictive strength of individual features (e.g., Pearson correlation and Predictive Power Score).
+
+* Handled missing data and engineered features where necessary.
+
+* Trained and tested machine learning models using historical house sale data
 
 ## Unfixed Bugs
 
