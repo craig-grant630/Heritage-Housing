@@ -3,7 +3,9 @@ import streamlit as st
 
 def hypothesis_body():
 
+
     st.write("## 🔍 Project Hypothesis & Validation")
+
 
     st.markdown("### 🏠 Hypothesis 1: Bigger Homes Mean Higher Prices")
     st.success(
@@ -16,6 +18,7 @@ def hypothesis_body():
         "💡 *Insight:* Higher-quality homes typically command higher prices."
     )
 
+
     st.markdown("### 🕒 Hypothesis 2: Newer Homes Sell for More")
     st.success(
         "We assumed that **newer properties** would have higher sale values.\n\n"
@@ -24,6 +27,7 @@ def hypothesis_body():
         "- Newer homes generally sell for more according to **Pearson correlation**.\n\n"
         "💡 *Insight:* Age of the property plays a noticeable role in pricing."
     )
+
 
     st.markdown("### 🧱 Hypothesis 3: Better Build Quality Boosts Price")
     st.success(
@@ -36,6 +40,7 @@ def hypothesis_body():
         "  - **1stFlrSF** (First floor area)\n\n"
         "💡 *Insight:* Larger and better-equipped homes drive value upward."
     )
+
 
     st.markdown("### 📊 Final Validation")
     st.info(

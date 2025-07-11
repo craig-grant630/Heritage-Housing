@@ -71,11 +71,38 @@ We consider the house price to be higher if the house is in good condition.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+**Business Requirement 1: Correlation Analysis and Data Visualisation**
+The client’s primary goal is to uncover which property features most significantly influence the house sale price.
+
+* Dataset Review and Exploration: Begin by thoroughly examining the housing dataset to understand its structure, contents, and key attributes.
+
+* Correlation Analysis: Use both Pearson and Spearman correlation methods to evaluate the strength and direction of the relationships between various features and the target variable, "SalePrice".
+
+* Identify Key Influential Variables: Highlight the features that show the strongest correlation with sale price. These variables will become the focus of deeper analysis.
+
+* Visual Analysis: Leverage visualisation tools such as scatter plots, regression lines, and heatmaps to effectively display the relationships between selected features and the sale price.
+
+* Hypothesis Testing: Use insights gained from correlation analysis and visual tools to confirm or challenge assumptions about which property characteristics have the greatest impact on pricing.
 
 ## ML Business Case
 
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+**Key Deliverables:**
+
+* **Data Visualisation:** Deliver clear visual representations that illustrate the relationship between various housing features and their corresponding sale prices.
+
+* **Sale Price Estimation:** Enable accurate price predictions for the client’s inherited properties, as well as any other residential homes in Ames, Iowa.
+
+**Analytical Approach:**
+
+* **Traditional Data Analysis:** Apply standard statistical methods to evaluate how property attributes relate to sale prices through a detailed correlation study.
+
+**Dashboard Development:**
+
+* **Interactive Dashboard:** The final results will be shared through an interactive dashboard created with Streamlit, offering a user-friendly way to explore findings and predictions.
+
+**Model Selection:**
+
+* Given the nature of the dataset, a regression-based model will be employed to estimate house sale prices. The model will use selected housing features as input variables and produce a predicted sale price as the output.
 
 ## Dashboard Design
 

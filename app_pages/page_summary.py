@@ -19,6 +19,7 @@ def page_summary_body():
         "housing market analysis tasks."
     )
 
+
     st.success(
         "### Business Requirements\n"
         "The project is guided by two main business objectives:\n"
@@ -29,12 +30,11 @@ def page_summary_body():
         "houses and any other property in Ames, Iowa."
     )
 
+
     st.markdown(
         "### Documentation\n"
         "For a comprehensive understanding of the project and dataset, "
         "please refer to the "
         "[Project README](https://github.com/craig-grant630/"
         "Heritage-Housing/blob/main/README.md)."
-
-    
     )
