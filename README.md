@@ -175,7 +175,24 @@ This page dives into the core machine learning process used to train and evaluat
 
 ## Unfixed Bugs
 
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
+### GarageYrBlt Median Imputer
+
+There is one particular assumption made in the model that might skew data - this being GarageYrBlt having the median imputer, this can effect the model in the following:
+
+* Loss of Temporal Meaning
+The median year might not represent a realistic or contextually meaningful value.
+
+For example, if most houses were built in 1970 and 2005, the median could be ~1990—which may not actually correspond to a real or likely garage construction year for the missing data.
+
+* If the missing garage year is associated with no garage, then filling in a median year implies a garage exists, which can distort model accuracy.
+
+If there was more time to develop:
+
+ A better alternative to using the median for missing GarageYrBlt values is predictive imputation.
+
+Unlike the median, which gives the same value to all missing entries, predictive imputation keeps the natural variation in the data. For example, if a house was built in 2005, the model might estimate the garage was also built around that time, instead of defaulting to a median like 1980.
+
+Although this method takes a bit more time and effort, it can improve model accuracy because it keeps more of the real relationships between features.
 
 ## Deployment
 
