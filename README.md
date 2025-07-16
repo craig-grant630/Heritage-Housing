@@ -136,6 +136,43 @@ To test this, I:
 
 * Trained and tested machine learning models using historical house sale data
 
+### Page 3: House Price Study
+
+This page focuses on exploring the relationships between key variables and the target: SalePrice. It uses statistical correlation techniques to highlight which features have the strongest impact — either positive or negative — on sale price.
+
+The correlation study uses Pearson’s correlation coefficient to quantify the linear relationship between numerical features and SalePrice. Features with values closer to +1 or –1 indicate a stronger relationship, whereas values near 0 suggest a weak or no linear relationship.
+
+Page Includes:
+
+Tickbox: Show a preview of the dataset
+Gives users a quick look at the structure of the data after cleaning and preprocessing — useful to verify the current set of variables being analyzed.
+
+Tickbox: Show regression plots
+Displays regression line plots between top correlated features and sale price. These visualizations help users intuitively see the strength and direction of relationships.
+
+Tickbox: Show correlation matrix
+Presents a heatmap showing Pearson correlation coefficients among all numerical features. This helps identify multicollinearity and the most influential variables.
+
+### Page 4: House Price Prediction
+
+This page allows users to input specific details about a house and receive an estimated sale price in real time, powered by the machine learning model trained earlier in the study. It acts as a simplified, user-friendly front end for your predictive pipeline.
+
+Users can manually enter or select values for important features that influence sale price — for example:
+
+* Square footage (GrLivArea)
+
+* Overall quality rating (OverallQual)
+
+* Garage size
+
+* Year built
+
+### Page 5:ML Pipeline
+
+Develop a reliable machine learning model that predicts house sale prices with a high degree of accuracy. The goal is to enable data-driven price estimation based on relevant property features.
+
+This page dives into the core machine learning process used to train and evaluate the predictive model. It provides transparency around what features were used, how the model was built, and how well it performs.
+
 ## Unfixed Bugs
 
 * You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
