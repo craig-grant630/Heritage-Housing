@@ -84,6 +84,26 @@ The client’s primary goal is to uncover which property features most significa
 
 * Hypothesis Testing: Use insights gained from correlation analysis and visual tools to confirm or challenge assumptions about which property characteristics have the greatest impact on pricing.
 
+**Business Requirement 2: Predict House Prices**
+The client aims to accurately predict the sale prices of residential properties in Ames, Iowa, including four inherited houses.
+
+To achieve this, the following steps were undertaken:
+
+1. Data Cleaning and Feature Engineering
+The raw dataset was prepared by handling missing values, removing irrelevant features, and engineering new variables to enhance model performance.
+
+2. Model Selection and Development
+Several regression algorithms were explored, with ExtraTreesRegressor emerging as the most effective based on performance metrics.
+
+3. Hyperparameter Tuning
+The chosen model was further optimized using hyperparameter tuning techniques (via GridSearchCV) to enhance prediction accuracy.
+
+4. Model Evaluation
+The model's performance was assessed using metrics such as the R² score and Mean Absolute Error (MAE), ensuring reliability and accuracy.
+
+5. House Price Prediction
+The final, trained model was then used to estimate sale prices for the four inherited houses and other properties within Ames, meeting the client’s business goals.
+
 ## ML Business Case
 
 **Key Deliverables:**
@@ -182,7 +202,7 @@ There is one particular assumption made in the model that might skew data - this
 * Loss of Temporal Meaning
 The median year might not represent a realistic or contextually meaningful value.
 
-For example, if most houses were built in 1970 and 2005, the median could be ~1990—which may not actually correspond to a real or likely garage construction year for the missing data.
+For example, if most houses were built in 1970 and 2005, the median could be ~1990 which may not actually correspond to a real or likely garage construction year for the missing data.
 
 * If the missing garage year is associated with no garage, then filling in a median year implies a garage exists, which can distort model accuracy.
 
