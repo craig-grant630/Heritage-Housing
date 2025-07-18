@@ -29,4 +29,47 @@ def regression_evaluation(X, y, pipeline):
     st.write("\n")
 
 
-#
+def regression_plots(X_train, y_train, X_test, y_test, pipeline, alpha_scatter=0.5):
+    """Generate scatter plots comparing actual vs predicted values for train and test sets."""
+
+    # Generate predictions
+    pred_train = pipeline.predict(X_train)
+    pred_test = pipeline.predict(X_test)
+
+    # Setup subplots
+    fig, axes = plt.subplots(ncols=2, figsize=(14, 6), sharey=True)
+    fig.suptitle("Predicted vs Actual Sale Prices", fontsize=16)
+
+    # Train set plot
+    sns.scatterplot(
+        x=y_train.values.ravel(), y=pred_train,
+        alpha=alpha_scatter, ax=axes[0], color="steelblue"
+    )
+    sns.lineplot(
+        x=y_train.values.ravel(), y=y_train.values.ravel(),
+        color='red', ax=axes[0], label="Ideal Fit"
+    )
+    axes[0].set_title("Training Set")
+    axes[0].set_xlabel("Actual Sale Price")
+    axes[0].set_ylabel("Predicted Sale Price")
+
+    # Test set plot
+    sns.scatterplot(
+        x=y_test.values.ravel(), y=pred_test,
+        alpha=alpha_scatter, ax=axes[1], color="steelblue"
+    )
+    sns.lineplot(
+        x=y_test.values.ravel(), y=y_test.values.ravel(),
+        color='red', ax=axes[1], label="Ideal Fit"
+    )
+    axes[1].set_title("Test Set")
+    axes[1].set_xlabel("Actual Sale Price")
+    axes[1].set_ylabel("Predicted Sale Price")
+
+    # Improve layout
+    for ax in axes:
+        ax.legend()
+        ax.grid(True)
+
+    plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+    st.pyplot(fig)
