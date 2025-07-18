@@ -321,4 +321,4 @@ Finally, The README template provided by Code Institute, which served as the fou
 
 ### Acknowledgments
 
-I would like to say thanks you to code institute for providing me with the nessary tools and lessons to be able to build this project.
+I would like to express my gratitude to Code Institute for equipping me with the knowledge and resources needed to successfully complete this project.
