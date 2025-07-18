@@ -69,6 +69,27 @@ We consider the house price to be higher if the house is in good condition.
 
 * A correlation study can help in investigating if this is true.
 
+<!-- markdownlint-disable MD033 -->
+<details>
+
+<summary> Correlation Study Results</summary>
+
+![Feature One](static/feature_one_corr.png)
+
+![Feature Two](static/feature_two_corr.png)
+
+![Feature Three](static/feature_three_corr.png)
+
+![Feature Four](static/feature_four_corr.png)
+
+![Feature Five](static/feature_five_corr.png)
+
+![Feature Six](static/feature_six_corr.png)
+
+</details>
+
+<!-- markdownlint-enable MD033 -->
+
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
 **Business Requirement 1: Correlation Analysis and Data Visualisation**
