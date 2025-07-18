@@ -240,12 +240,14 @@ Although this method takes a bit more time and effort, it can improve model accu
 ## Deployment
 
 The App live link is: [Deployed App](https://heritage-housing-cg-6cc4aa8a9f0f.herokuapp.com/)
-The project was deployed to Heroku using the following steps.
-Log in to Heroku and create an App
-At the Deploy tab, select GitHub as the deployment method.
-Select your repository name and click Search. Once it is found, click Connect.
-Select the branch you want to deploy, then click Deploy Branch.
-The deployment process should happen smoothly in case all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
+The project was deployed to **Heroku** using the following steps:
+
+1. Log in to your **Heroku** account and create a new app.
+2. Go to the **Deploy** tab and choose **GitHub** as your deployment method.
+3. Search for your GitHub repository and click **Connect** once it's found.
+4. Select the branch you want to deploy (e.g., `main`) and click **Deploy Branch**.
+5. Ensure all necessary deployment files (like `requirements.txt`, `Procfile`) are correctly set up so the build completes without errors.
+6. Once deployed, click the **Open App** button to access your live application.
 
 ## Main Data Analysis and Machine Learning Libraries
 
@@ -276,7 +278,7 @@ Scikit-learn – Key library for building machine learning pipelines, implementi
 
 * Codespaces - Integrated Development Environment (IDE) used for writing, testing, and managing the project code.
 
-*Git – Version control tool used to manage and track changes to the project codebase throughout development.
+* Git – Version control tool used to manage and track changes to the project codebase throughout development.
 
 * Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
 
@@ -295,3 +297,7 @@ Finally, The README template provided by Code Institute, which served as the fou
 ### Content
 
 * The icons were taken from [Steamlit](https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/)
+
+### Acknowledgments
+
+I would like to say thanks you to code institute for providing me with the nessary tools and lessons to be able to build this project.
