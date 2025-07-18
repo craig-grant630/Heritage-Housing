@@ -140,6 +140,8 @@ The client wishes to:
 
 * Use that insight to forecast the market value of four inherited properties, as well as any future houses in Ames.
 
+![Page 1 Preview](/static/page_one_design.png)
+
 ### Page 2: Project Hypothesis & Validation
 
 * Hypothesis
@@ -156,6 +158,10 @@ To test this, I:
 
 * Trained and tested machine learning models using historical house sale data
 
+* Hypothesis and validation page includes the list of hypotheis and the findings.
+
+![Page 2 Preview](/static/page_two_design.png)
+
 ### Page 3: House Price Study
 
 This page focuses on exploring the relationships between key variables and the target: SalePrice. It uses statistical correlation techniques to highlight which features have the strongest impact — either positive or negative — on sale price.
@@ -164,18 +170,19 @@ The correlation study uses Pearson’s correlation coefficient to quantify the l
 
 Page Includes:
 
-Tickbox: Show a preview of the dataset
+Dropdown: Show a preview of the dataset
 Gives users a quick look at the structure of the data after cleaning and preprocessing — useful to verify the current set of variables being analyzed.
 
 Tickbox: Show regression plots
 Displays regression line plots between top correlated features and sale price. These visualizations help users intuitively see the strength and direction of relationships.
 
-Tickbox: Show correlation matrix
-Presents a heatmap showing Pearson correlation coefficients among all numerical features. This helps identify multicollinearity and the most influential variables.
+![Page 3 Preview](static/page_three_design.png)
 
 ### Page 4: House Price Prediction
 
 This page allows users to input specific details about a house and receive an estimated sale price in real time, powered by the machine learning model trained earlier in the study. It acts as a simplified, user-friendly front end for your predictive pipeline.
+
+![Page 4 Preview](static/page_four_design.png)
 
 Users can manually enter or select values for important features that influence sale price — for example:
 
@@ -187,11 +194,27 @@ Users can manually enter or select values for important features that influence 
 
 * Year built
 
+* Basement footage (TotalBsmtSF)
+
+![Page 4 Predictive calculator](/static/predict_house_prices_calc_pfour.png)
+
 ### Page 5:ML Pipeline
 
 Develop a reliable machine learning model that predicts house sale prices with a high degree of accuracy. The goal is to enable data-driven price estimation based on relevant property features.
 
-This page dives into the core machine learning process used to train and evaluate the predictive model. It provides transparency around what features were used, how the model was built, and how well it performs.
+![Page 5 Preview](static/page_five_design.png)
+
+This page dives into the core machine learning process used to train and evaluate the predictive model. It provides transparency around what features were used:
+
+![Page 5 best features](static/best_features_and_importance.png)
+
+How the model was built:
+
+![Page ml pipiline](static/ml_pipeline_design.png)
+
+Finally the performance:
+
+![Page regression plots](static/regression_plots_pfive.png)
 
 ## Unfixed Bugs
 
@@ -216,18 +239,13 @@ Although this method takes a bit more time and effort, it can improve model accu
 
 ## Deployment
 
-### Heroku
-
-* The App live link is: <https://YOUR_APP_NAME.herokuapp.com/>
-* Set the .python-version Python version to a [Heroku-24](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+The App live link is: [Deployed App](https://heritage-housing-cg-6cc4aa8a9f0f.herokuapp.com/)
+The project was deployed to Heroku using the following steps.
+Log in to Heroku and create an App
+At the Deploy tab, select GitHub as the deployment method.
+Select your repository name and click Search. Once it is found, click Connect.
+Select the branch you want to deploy, then click Deploy Branch.
+The deployment process should happen smoothly in case all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 
 ## Main Data Analysis and Machine Learning Libraries
 
@@ -264,20 +282,16 @@ Scikit-learn – Key library for building machine learning pipelines, implementi
 
 ## Credits
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-* You can break the credits section up into Content and Media, depending on what you have included in your project.
+This project has been developed based on the knowledge and structure provided by Code Institute’s walkthrough projects, particularly the "Churnometer" (Project 2). While some elements have been directly adapted and modified from that project, considerable effort has been made to expand and customize the work to suit this new context.
+
+Throughout the development process, I encountered technical challenges which were resolved using resources such as:
+
+Stack Overflow, which was invaluable in helping resolve various bugs and implementation issues.
+
+The Slack Community, where I received valuable support and guidance.
+
+Finally, The README template provided by Code Institute, which served as the foundation for this document.
 
 ### Content
 
-* The text for the Home page was taken from Wikipedia Article A
-* Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-* The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-* The photos used on the home and sign-up page are from This Open Source site
-* The images used for the gallery page were taken from this other open-source site
-
-## Acknowledgements (optional)
-
-* In case you would like to thank the people that provided support through this project.
+* The icons were taken from [Steamlit](https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/)
