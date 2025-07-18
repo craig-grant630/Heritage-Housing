@@ -231,6 +231,35 @@ Although this method takes a bit more time and effort, it can improve model accu
 
 ## Main Data Analysis and Machine Learning Libraries
 
+### Core Python Libraries
+
+* NumPy – Utilized in correlation studies, particularly for generating data structures that support visualizations like heatmaps.
+
+* Pandas – Employed to load and manipulate the raw data using DataFrames, and perform various data transformation and analysis tasks.
+
+* Matplotlib & Plotly – Used for data visualization, helping to convert complex analyses into readable and insightful plots and charts.
+
+* Seaborn – Applied in exploratory data analysis, especially for statistical visualizations such as correlation matrices and regression plots.
+
+* Machine Learning & Data Processing
+Scikit-learn – Key library for building machine learning pipelines, implementing regression models, performing feature selection, and evaluating model performance.
+
+* Feature-engine – Used for advanced feature engineering tasks such as missing value imputation and variable transformation, to prepare the dataset for modeling.
+
+### Web Interface & Deployment
+
+* Streamlit – A fast and lightweight tool used to build an interactive web app for displaying data analysis results and running predictive tools.
+
+* Heroku – Cloud platform used to deploy and host the Streamlit web application.
+
+### Development Environment & Tools
+
+* Jupyter Notebook – Used for conducting initial exploratory data analysis (EDA) and training/testing machine learning models in an interactive coding environment.
+
+* Codespaces - Integrated Development Environment (IDE) used for writing, testing, and managing the project code.
+
+*Git – Version control tool used to manage and track changes to the project codebase throughout development.
+
 * Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
 
 ## Credits
